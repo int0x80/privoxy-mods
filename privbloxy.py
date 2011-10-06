@@ -27,7 +27,6 @@ def add_ads_action(dir, lines, user_line):
 # determine whether ads actionfile entry exists or update
 # -----------------------------------------------------------
 def check_config(dir):
-    ads_entry = False
     curr_line = 0
     user_line = 0
     
@@ -37,7 +36,6 @@ def check_config(dir):
         # check for ads action file; bail if present
         # -----------------------------------------------------------
         if line.startswith("actionsfile ads.action"):
-            ads_entry = True
             break
         # -----------------------------------------------------------
         # line after user actions was not ads actions
